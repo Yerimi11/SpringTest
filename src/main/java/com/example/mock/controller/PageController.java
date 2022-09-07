@@ -1,4 +1,4 @@
-package com.example.restaurant.controller;
+package com.example.mock.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,8 +1,12 @@
-naver:
-  url:
-    search:
-      local: https://openapi.naver.com/v1/search/local.json
-      image: https://openapi.naver.com/v1/search/image
-  client:
-    id: BJ0hiUbWlHgnQagz1Dw6
-    secret: 2dFuyiZULx
+## DB주소 설정, 인프라 설정 정보, Bean 내부의 특정 설정 값을 주입 등 가능한 파일
+
+
+#naver:
+#  url:
+#    search:
+#      local: https://openapi.naver.com/v1/search/local.json
+#      image: https://openapi.naver.com/v1/search/image
+#  client:
+#    id: BJ0hiUbWlHgnQagz1Dw6
+#    secret: 2dFuyiZULx
+

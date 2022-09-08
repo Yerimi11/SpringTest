@@ -11,6 +11,6 @@ public class PageController { // Frontend(css) 와 연결
 
     @GetMapping("/main")
     public ModelAndView main(){
-        return new ModelAndView("temp/main");
+        return new ModelAndView("index.html");
     }
 }

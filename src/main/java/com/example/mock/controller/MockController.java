@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j // 로거 추가
 @RestController
-@RequestMapping("/api/mock")
+@RequestMapping("/api")
 public class MockController {
 
     private final MockService mockService;
@@ -23,9 +23,8 @@ public class MockController {
         this.mockService = mockService;
     }
 
-    @GetMapping("/")
+    @GetMapping("/mock")
     public MockResult search(@RequestParam String query){
-        log.debug("hi");
         MockParams params = new MockParams(query);
         return mockService.search(params);
     }

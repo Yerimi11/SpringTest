@@ -19,9 +19,8 @@ public class MockService {
         String query = params.getQuery();
         MockEntity entity = mockRepository.find(query);
 //        String name = entity.getName();
-//        String age = entity.getAge().toString();
-//        MockResult result = new MockResult(name, age);
-        MockResult result = MockResult.convert(entity);
-        return result;
+//        String randomNums = entity.getRandomNums().toString();
+//        MockResult result = new MockResult(name, randomNums);
+        return MockResult.convert(entity);
     }
 }

@@ -5,18 +5,18 @@ import lombok.Getter;
 public class MockEntity {
 
     private String name;
-    private Integer age;
+    private Integer randomNums;
 
-    public MockEntity(String name, Integer age) {
+    public MockEntity(String name, Integer randomNums) {
         this.name = name;
-        this.age = age;
+        this.randomNums = randomNums;
     }
 
     public String getName() {
         return name;
     }
 
-    public Integer getAge() {
-        return age;
+    public Integer getRandomNums() {
+        return randomNums;
     }
 }

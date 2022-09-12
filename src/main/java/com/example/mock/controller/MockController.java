@@ -26,7 +26,7 @@ public class MockController {
     public MockResult search(@RequestParam String query){
         MockParams params = new MockParams(query);
         MockResult result = mockService.search(params);
-        log.debug("result: {}", result);
+        log.debug("result: {}, {}", result.getName(), result.getRandomNums());
 //        System.out.println(result);
         return result;
 

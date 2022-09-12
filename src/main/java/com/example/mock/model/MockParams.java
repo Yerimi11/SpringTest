@@ -2,7 +2,7 @@ package com.example.mock.model;
 
 public class MockParams {
 
-    private String query;
+    private final String query;
 
     public MockParams(String query) {
         this.query = query;

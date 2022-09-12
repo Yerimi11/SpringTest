@@ -5,7 +5,6 @@ package com.example.mock.controller;
 import com.example.mock.model.MockParams;
 import com.example.mock.model.MockResult;
 import com.example.mock.service.MockService;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,7 +25,11 @@ public class MockController {
     @GetMapping("/mock")
     public MockResult search(@RequestParam String query){
         MockParams params = new MockParams(query);
-        return mockService.search(params);
+        MockResult result = mockService.search(params);
+        log.debug("result: {}", result);
+//        System.out.println(result);
+        return result;
+
     }
 
 }
